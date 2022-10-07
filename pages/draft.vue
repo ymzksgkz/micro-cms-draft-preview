@@ -5,15 +5,16 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios'
 
 export default {
-  name: "Draft",
+  name: 'Draft',
   data() {
     return {
-      data: {},
-    };
-  },
-  async created() {},
-};
+      data: {}
+    }
+  }, async created() {
+    console.log('aa')
+  }
+}
 </script>
