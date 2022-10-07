@@ -1,11 +1,19 @@
 <template>
   <div>
-    <span>ドラフトページです</span>
+    <span>ドラフトページですaaa</span>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  name: 'Draft'
-}
+  name: "Draft",
+  data() {
+    return {
+      data: {},
+    };
+  },
+  async created() {},
+};
 </script>
