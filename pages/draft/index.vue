@@ -1,6 +1,8 @@
 <template>
   <div>
-    <span>ドラフトページですaaa</span>
+    <span>これは下書きのプレビューです。運用時はスタイルなど指定して本番に近い状態の見た目で動作確認ができます。</span>
+    <div id="title"></div>
+    <div id="body"></div>
   </div>
 </template>
 
@@ -27,6 +29,9 @@ export default {
       }
     )
     this.data = data
+    console.log(data)
+    document.getElementById('title').innerHTML = data.title
+    document.getElementById('body').innerHTML = data.content
 
   }
 }
